@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Tracker</title>
-    <link rel="shortcut icon" href="jobs-2.png  " type="image/x-icon">
+    <link rel="shortcut icon" href="jobs-2.png " type="image/x-icon">
     <!-- tailwind + daisy cdn -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -39,9 +39,19 @@
             </div> 
         </div>
     </header>
+    <hr class="my-5">
+<main class="w-[80%] mx-auto mb-6 p-5">
+    <div class=" flex justify-between ">
+            <h1 class="text-blue-950 text-[30px] font-bold">Available Jobs</h1>
+            <p class="font-semibold text-gray-500">8 jobs</p>
+        </div>
+        <div class="py-3 ">
+            <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn" class="btn btn-soft w-[100px] mr-2">All </button>
+            <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="btn btn-soft w-[100px] mr-2">Interview</button>
+            <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="btn btn-soft w-[100px] mr-2">Rejected</button>
+        </div>
+</main>
     <script src="script.js"></script>
-    <main>
-        
-    </main>
+    
 </body>
 </html>
