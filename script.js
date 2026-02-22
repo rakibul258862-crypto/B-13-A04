@@ -17,7 +17,8 @@ const allCardSection = document.getElementById('all-cards');
     const mainContainer = document.querySelector('main');
     const filterSection = document.getElementById('filtered-section');
     const filterSectionR = document.getElementById('filtered-section-2');
-    function calculateCount(){
+
+function calculateCount(){
     totalCount.innerText = allCardSection.children.length;
     interviewCount.innerText = interviewList.length;
     rejectedCount.innerText = rejectedList.length;
@@ -184,5 +185,3 @@ function filteredRejected(){
     }
 
 }
-
-
