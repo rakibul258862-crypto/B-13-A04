@@ -12,7 +12,6 @@ const interviewFilterBtn = document.getElementById('interview-filter-btn');
 const rejectFilterBtn = document.getElementById('rejected-filter-btn');
 
 const allCardSection = document.getElementById('all-cards');
-
 // console.log(allCardSection.children.length);
 // selected main section by queryselector
     const mainContainer = document.querySelector('main');
@@ -37,3 +36,22 @@ function toggleStyle(id){
     // console.log(id);
     // selected btn
     const selected = document.getElementById(id);
+
+    // console.log(selected)
+    // add bg-primary for current button
+    selected.classList.remove('bg-primary','text-black');
+    selected.classList.add('bg-soft','text-blue-950');
+    if(id == 'interview-filter-btn'){
+        allCardSection.classList.add('hidden');
+        filterSection.classList.remove('hidden');
+    }else if(id == 'all-filter-btn' ){
+        allCardSection.classList.remove('hidden');
+        filterSection.classList.add('hidden');
+    }else if ( id == 'rejected-filter-btn'){
+        allCardSection.classList.add('hidden');
+        filterSection.classList.add('hidden');
+        filterSectionR.classList.remove('hidden');
+    }
+} 
+
+
